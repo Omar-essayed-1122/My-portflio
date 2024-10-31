@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Essayed - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+      #status{
+        color:#FD0202C9;
+      }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans" dir="rtl">
+
+    <!-- Language Switch -->
+    <div class="text-right p-4">
+        <button id="languageSwitch" class="text-teal-400 hover:text-teal-500 font-bold">العربية</button>
+    </div>
+
+    <!-- Header -->
+    <header class="text-center py-12">
+        <h1 id="name" class="text-4xl font-bold text-teal-400 animate__animated animate__fadeInDown">Omar Essayed</h1>
+        <p id="title" class="text-xl text-gray-400 animate__animated animate__fadeInDown animate__delay-1s">Full-Stack Web Developer</p>
+        <p id="description" class="mt-4 animate__animated animate__fadeInDown animate__delay-2s">
+            Specializing in interactive and dynamic user experiences with a focus on Vue.js and Express.js.
+        </p>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12">
+        <h2 id="skillsTitle" class="text-3xl font-bold text-teal-400 text-center mb-8 animate__animated animate__fadeIn">Skills</h2>
+        <div class="flex flex-wrap justify-center text-center">
+            <div class="w-full md:w-1/3 p-4 animate__animated animate__fadeInUp animate__delay-1s">
+                <h3 class="text-2xl font-bold text-teal-400 mb-2"><i class="fas fa-laptop-code"></i> Frontend</h3>
+                <p id="frontendSkills">Vue.js, HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, animate.css, Font Awesome</p>
+            </div>
+            <div class="w-full md:w-1/3 p-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <h3 class="text-2xl font-bold text-teal-400 mb-2"><i class="fas fa-server"></i> Backend</h3>
+                <p id="backendSkills">Express.js, Node.js, API development, Database Management</p>
+            </div>
+            <div class="w-full md:w-1/3 p-4 animate__animated animate__fadeInUp animate__delay-3s">
+                <h3 class="text-2xl font-bold text-teal-400 mb-2"><i class="fas fa-tools"></i> Tools & Libraries</h3>
+                <p id="toolsSkills">Git, GitHub, Postman, npm, MySQL, ChatGpt</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-800">
+        <h2 class="text-3xl font-bold text-teal-400 text-center mb-8 animate__animated animate__fadeIn">Projects</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-1/3 p-4">
+                <div class="bg-gray-700 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-500 ease-in-out">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-2">E-COMMERCE</h3>
+                    <p class="text-gray-300">E-COMMERCE SHOP I BULID IT BY VUE FOR FRONTEND AND EXPRESS.JS FOR BACKEND AND MYSQL OF Database</p>
+                   <span id="status">pending</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12">
+        <h2 class="text-3xl font-bold text-teal-400 text-center mb-8 animate__animated animate__fadeIn">Contact</h2>
+        <div class="text-center">
+            <p class="text-lg text-gray-300"><i class="fas fa-envelope"></i> omaressayed877@gmail.com</p>
+            <p class="text-lg text-gray-300"><i class="fas fa-phone"></i> +20 1553442304</p>
+            <div class="mt-4">
+                <a href="https://wa.me/qr/CMZ2HT6KM2TGF1" class="text-teal-400 hover:text-teal-500 text-2xl mx-2"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="https://www.facebook.com/share/xnaPZVgkSYeNrvZX/" class="text-teal-400 hover:text-teal-500 text-2xl mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-teal-400 hover:text-teal-500 text-2xl mx-2"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-center">
+        <p class="text-gray-500">© 2024 Omar Essayed. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Language Toggle -->
+    <script>
+        const content = {
+            en: {
+                name: "Omar Essayed",
+                title: "Full-Stack Web Developer",
+                description: "Specializing in interactive and dynamic user experiences with a focus on Vue.js and Express.js.",
+                skillsTitle: "Skills",
+                frontendSkills: "Vue.js, HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, animate.css, Font Awesome",
+                backendSkills: "Express.js, Node.js, API development, Database Management",
+                toolsSkills: "Git, GitHub, Postman, npm, MySQL, Ch",
+                languageButton: "العربية"
+            },
+            ar: {
+                name: "عمر السيد",
+                title: "مطور ويب شامل",
+                description: "متخصص في تجارب المستخدم التفاعلية والديناميكية، مع التركيز على Vue.js وExpress.js.",
+                skillsTitle: "المهارات",
+                frontendSkills: "Vue.js, HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, animate.css, Font Awesome",
+                backendSkills: "Express.js, Node.js، تطوير API، إدارة قواعد البيانات",
+                toolsSkills: "Git، GitHub، Postman، npm، MySQL، ChatGpt",
+                languageButton: "English"
+            }
+        };
+
+        function updateLanguage(lang) {
+            document.getElementById("name").textContent = content[lang].name;
+            document.getElementById("title").textContent = content[lang].title;
+            document.getElementById("description").textContent = content[lang].description;
+            document.getElementById("skillsTitle").textContent = content[lang].skillsTitle;
+            document.getElementById("frontendSkills").textContent = content[lang].frontendSkills;
+            document.getElementById("backendSkills").textContent = content[lang].backendSkills;
+            document.getElementById("toolsSkills").textContent = content[lang].toolsSkills;
+            document.getElementById("languageSwitch").textContent = content[lang].languageButton;
+            localStorage.setItem("selectedLanguage", lang);
+        }
+
+        const selectedLanguage = localStorage.getItem("selectedLanguage") || "en";
+        updateLanguage(selectedLanguage);
+
+        document.getElementById("languageSwitch").addEventListener("click", () => {
+            const newLanguage = selectedLanguage === "en" ? "ar" : "en";
+            updateLanguage(newLanguage);
+        });
+    </script>
+
+</body>
+              </html>
